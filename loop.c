@@ -1,6 +1,11 @@
 #include<stdio.h>
-int main(){
-  for(int i = 0; i<50; ++i){
-    printf(" %s\n","REHAN KHAN");
-  }
+int main()
+{
+    int i;
+    for (int i = 0; i < 50000; i++)
+    {
+       printf("Rehan khan");
+       printf("Ezaz Khan");
+    }
+    
 }
