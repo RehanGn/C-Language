@@ -1,13 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int x;
-    int y;
-    int z;
-    x = sizeof (char);
-    y = sizeof(float);
-    z = sizeof(double);
-    printf("%d\n", x);
-    printf("%d\n", y);
-    printf("%d\n", z);
+    int IntType;
+    char charType;
+    float floatType;
+    double doubleType;
+    printf("Int type is: %zu bytes\n", sizeof(IntType));
+    printf("char type is: %zu bytes\n", sizeof(charType));
+    printf("float type is: %zu bytes\n", sizeof(floatType));
+    printf("double type is: %zu bytes\n", sizeof(doubleType));
 }
