@@ -1,28 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    char operation;
-    double n1, n2;
-    printf("Enter the operator:");
-    scanf("%c", &operation);
-    printf("Enter the two no:");
-    scanf("%lf", &n1, &n2);
-    switch (operation)
+    int a, b, c;
+    int ch;
+    printf("Enter the any two no:\n");
+    scanf("%d %d", &a, &b);
+    printf("Enter the choice number: \n");
+    scanf("%d", &ch);
+    switch (ch)
     {
-    case '+':
-    printf("%.1lf + %.1lf = %.1lf", n1, n2, n1+n2);
+        case 1: c = a + b;
+        printf("%d", c);
         break;
-    case '-':
-    printf("%.1lf - %.1lf = %.1lf", n1, n2, n1-n2);
-        break;
-    case '*':
-    printf("%.1lf * %.1lf = %.1lf", n1, n2, n1*n2);
-    break;
-    case '/':
-    printf("%.1lf / %.1lf = %.1lf", n1, n2, n1/n2);
-    break;
     
-    default:
-      printf("This is error not define");
-    }
+        case 2: c = a - b;
+        printf("%d", c);
+        break;
+         case 3: c = a * b;
+        printf("%d", c);
+        break;
+         case 4: c = a / b;
+        printf("%d", c);
+        break;
+        default: printf("Undefiend value");
+}
 }
